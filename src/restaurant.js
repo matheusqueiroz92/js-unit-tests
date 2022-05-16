@@ -94,17 +94,17 @@
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 
 const createMenu = (objectMenu) => {
-  fetchMenu: () => objectMenu,
-  consumption: [],
-  order: (string) => { createMenu().consumption.push(string) },
-  pay: () => {
-    let soma = 0;
-    const pagamento = Object.values(Object.values(objectMenu));
-    for(let index = 0; index < pagamento.length; index += 1){
-      soma += pagamento[index];
-    }
-    return soma;
-  }
+  // fetchMenu: () => objectMenu,
+  // consumption: [],
+  // order: (string) => { createMenu().consumption.push(string) },
+  // pay: () => {
+  //   let soma = 0;
+  //   const pagamento = Object.values(Object.values(objectMenu));
+  //   for(let index = 0; index < pagamento.length; index += 1){
+  //     soma += pagamento[index];
+  //   }
+  //   return soma;
+  // }
 };
 
 const restauranteMatheus = createMenu({food: {'coxinha': 5.9, 'sopa': 12.9}, drink: {'agua': 3,9, 'cerveja': 9.9}});
