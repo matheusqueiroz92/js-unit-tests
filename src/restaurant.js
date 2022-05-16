@@ -107,7 +107,5 @@ const createMenu = (objectMenu) => {
   // }
 };
 
-const restauranteMatheus = createMenu({food: {'coxinha': 5.9, 'sopa': 12.9}, drink: {'agua': 3,9, 'cerveja': 9.9}});
-restauranteMatheus.order("")
-console.log()
+// const restauranteMatheus = createMenu({food: {'coxinha': 5.9, 'sopa': 12.9}, drink: {'agua': 3,9, 'cerveja': 9.9}});
 module.exports = createMenu;
