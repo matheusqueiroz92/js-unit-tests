@@ -96,7 +96,7 @@
 const createMenu = (objectMenu) => {
   fetchMenu: () => objectMenu,
   consumption: [],
-  order: (string) => { createMenu().consumption.push(string); },
+  order: (string) => { createMenu().consumption.push(string) },
   pay: () => {
     let soma = 0;
     const pagamento = Object.values(Object.values(objectMenu));
@@ -104,7 +104,7 @@ const createMenu = (objectMenu) => {
       soma += pagamento[index];
     }
     return soma;
-  },
+  }
 };
 
 const restauranteMatheus = createMenu({food: {'coxinha': 5.9, 'sopa': 12.9}, drink: {'agua': 3,9, 'cerveja': 9.9}});
