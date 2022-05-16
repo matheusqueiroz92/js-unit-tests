@@ -29,9 +29,13 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     expect(circle()).toBeUndefined();
   });
 
+  it('Verifica se a função `circle retorna um objeto, caso o parẫmetro passado seja 3, aproximando o valor da área', () => {
+    expect(circle(3)).toEqual({radius: 3, area: 28.259999999999998, circumference: 18.84});
+  });
+
   it('Verifica se a função `circle` retorna um objeto, caso o parâmetro passado seja um número inteiro.', () => {
     expect(circle(1)).toEqual({ radius: 1, area: 3.14, circumference: 6.28 });
-    expect(circle(3)).toEqual({ radius: 3, area: 28.26, circumference: 18.84 });
+    expect(circle(2)).toEqual({ radius: 2, area: 12.56, circumference: 12.56 });
     expect(circle(7)).toEqual({ radius: 7, area: 153.86, circumference: 43.96 });
   });
     
